@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="app">
+        <h1>Simple Quiz</h1>
+        <div class="quiz">
+            <h2 id="question">Question Goes Here</h2>
+            <div id="answer-button">
+                <button class="btn">Answer 1</button>
+                <button class="btn">Answer 2</button>
+                <button class="btn">Answer 3</button>
+                <button class="btn">Answer 4</button>
+
+            </div>
+            <button id="next-btn">Next</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
+<!-- const questions = [
+  {
+    question: "Who is the strongest man in the world",
+    answers: [
+      { text: "Eddie Hall", correct: true },
+      { text: "Thor", correct: false },
+      { text: "Larry Wheel", correct: false },
+      { text: "You", correct: false }
+    ]
+  },
+  {
+    question: "What is the largest animal on the planet",
+    answers: [
+      { text: "Shark", correct: false },
+      { text: "Whale", correct: true }, // Corrected spelling of "Whale"
+      { text: "Giraffe", correct: false }, // Corrected spelling of "Giraffe"
+      { text: "Elephant", correct: false }
+    ]
+  },
+  {
+    question: "In this list what is the high level language",
+    answers: [
+      { text: "C", correct: false },
+      { text: "Rust", correct: false }, // Corrected capitalization of "Rust"
+      { text: "JavaScript", correct: true }, // Corrected capitalization of "JavaScript"
+      { text: "Rust", correct: false }
+    ]
+  },
+  {
+    question: "What is the most popular language used in DSA",
+    answers: [
+      { text: "Java", correct: false },
+      { text: "Python", correct: false }, // Corrected spacing
+      { text: "C++", correct: true },
+      { text: "C#", correct: false }
+    ]
+  }
+];
+
+const questionelement = document.getElementById("question");
+const answersbtn = document.getElementById("answer-button");
+const next = document.getElementById("next-btn");
+let currentQuestionindex = 0;
+let score = 0;
+
+function startQuiz() {
+  currentQuestionindex = 0;
+  score = 0;
+  next.innerHTML = "Next";
+  showQuestion();
+}
+
+function showQuestion() {
+  let currentQuestion = questions[currentQuestionindex];
+  let questionno = currentQuestionindex + 1; // Corrected
+  questionelement.innerHTML = questionno + ". " + currentQuestion.question;
+  
+  answersbtn.innerHTML = ''; // Clear previous buttons
+  currentQuestion.answers.forEach(answer => {
+    const button = document.createElement("button");
+    button.innerHTML = answer.text; // Corrected to lowercase
+    button.classList.add("btn");
+    answersbtn.appendChild(button);
+  });
+}
+
+startQuiz(); -->
